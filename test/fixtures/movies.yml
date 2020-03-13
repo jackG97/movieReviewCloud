@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: Avatar
+  description: MyText
+  movie_length: 2:30
+  director: MyString
+  rating: 12
+
+
+
+two:
+  title: Avengers
+  description: MyText
+  movie_length: 2:15
+  director: MyString
+  rating: 12

@@ -1,0 +1,26 @@
+<% if !user_signed_in? %>
+<div class="container">
+  <div class="jumbotron">
+    <h1>Welcome to Movie Reviews</h1>
+    <p>Here you can view the lastest reviews about some of the best movies around!</p>
+    <p> <%= link_to "Join us now", new_user_registration_path, class:"btn btn-primary btn-lg"%></p>
+  </div>
+
+</div>
+<% end %>
+
+<div class="row">
+  <% @movies.each do |movie| %>
+    <div class="col-sm-6 col-md-3">
+      <div class="panel panel-default">
+      <div class="thumbnail">
+        <% if user_signed_in? %>
+      <%= link_to (image_tag movie.image.url(:medium), class: 'image'), movie %>
+      <% else %>
+      <%= link_to (image_tag movie.image.url(:medium), class: 'image'), new_user_session_path %>
+      <% end %>
+      </div>
+    </div>
+    </div>
+  <% end %>
+</div>

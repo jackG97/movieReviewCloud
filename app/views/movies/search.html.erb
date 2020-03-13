@@ -1,0 +1,16 @@
+
+    <div class="panel-body">
+
+<h3>Search Result</h3><br>
+<div class="search-body"
+    <% @results.each do |result| %>
+        <h3>Title:</h3><br>
+        <%= result.title %><br><br>
+        <%= image_tag result.image.url %><br><br>
+        <h3>Description:</h3>
+        <%= result.description %><br><br><br>
+        
+    <% end %>
+
+    </div>
+    </div>

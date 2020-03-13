@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  rating: 4
+  comment: It was a great film. would recommend it to a friend.
+
+two:
+  rating: 1
+  comment: It was a bad film. Needs more work.

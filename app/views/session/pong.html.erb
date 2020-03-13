@@ -1,0 +1,21 @@
+<h1>Session#pong</h1>
+<p>Find me in app/views/session/pong.html.erb</p>
+
+
+<% if @sess && @sess.any? %>
+
+<H3> History: </H3>
+
+<ul>
+	<% @sess [0..2].each do |sess| %>
+	<li><%= link_to sess,sess %></li>
+	<% end %>
+
+</ul>
+
+<% end %>
+
+<body>
+
+	<%= yield %>
+</body>

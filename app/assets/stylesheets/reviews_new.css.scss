@@ -1,0 +1,67 @@
+h1, h2, h3, h4, h5, h6, a {
+  margin:0; padding:0;
+}
+.movie-new {
+  margin:0 auto;
+  max-width:500px;
+}
+.movie-header {
+  color:#f2f2f2;
+  text-align:center;
+  font-size:200%;
+}
+
+.movie-form {
+  border:.5px solid #fff;
+  background:#79a6d2;
+  border-radius:10px;
+  box-shadow:0px 0px 10px #000;
+}
+.movie-form h3 {
+  text-align:left;
+  margin-left:40px;
+  color:#fff;
+}
+.movie-form {
+  box-sizing:border-box;
+  padding-top:15px;
+	padding-bottom:10%;
+  margin:5% auto;
+  text-align:center;
+  color:black;
+
+}
+.movie input[type="text"],
+.movie input[type="text"]
+.movie input[type="text"]
+.movie input[type="text"]
+.movie input[type="text"]
+.movie input[type="Image"]
+{
+  max-width:300px;
+  width: 120%;
+  height: 50%;
+  line-height:3em;
+  font-family: 'Ubuntu', sans-serif;
+  margin:1em 2em;
+  border-radius:2px;
+  border:2px solid #f2f2f2;
+  outline:none;
+  padding-left:10px;
+}
+.movie-form input[type="button"] {
+  height:30px;
+  width:100px;
+  background:#fff;
+  border:1px solid #f2f2f2;
+  border-radius:20px;
+  color: black;
+  text-transform:uppercase;
+  font-family: 'Ubuntu', sans-serif;
+  cursor:pointer;
+
+}
+
+.h6{
+  color:#ffffff
+}
