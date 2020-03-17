@@ -10,17 +10,20 @@
 <% end %>
 
 <div class="row">
-  <% @movies.each do |movie| %>
+  <% movies.each do |movie| %>
     <div class="col-sm-6 col-md-3">
       <div class="panel panel-default">
       <div class="thumbnail">
         <% if user_signed_in? %>
       <%= link_to (image_tag movie.image.url(:medium), class: 'image'), movie %>
+      <%= movie.movie_title %>
       <% else %>
       <%= link_to (image_tag movie.image.url(:medium), class: 'image'), new_user_session_path %>
+      <%= movie.movie_title %>
       <% end %>
       </div>
     </div>
     </div>
   <% end %>
+<%= will_paginate @movies %>
 </div>

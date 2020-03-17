@@ -41,9 +41,11 @@ gem 'aws-sdk', '< 3.0.1'
 
 gem 'bootstrap-sass', '~> 3.4.1'
 
-gem 'draper', '~> 4.0'
+gem 'draper', '~> 3.0.0.pre1'
 
 gem 'activerecord-session_store'
+
+gem 'will_paginate'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
