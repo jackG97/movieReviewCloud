@@ -10,7 +10,7 @@ class MoviesController < ApplicationController
 
   def search
     if params[:search].blank?
-    redirect_to(root_path, alert: "Empty field!") and return
+    redirect_to(movies_path, alert: "Empty field!") and return
   else
     @parameter = params[:search].downcase
         @results = Movie.all.where("lower(title) LIKE :search", search: "%#{@parameter}%")
@@ -21,7 +21,7 @@ end
   # GET /movies/1.json
   def show
     @reviews = Review.where(movie_id: @movie.id).order("created_at DESC")
-  
+
   end
 
   # GET /movies/new
