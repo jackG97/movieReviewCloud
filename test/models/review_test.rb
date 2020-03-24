@@ -20,9 +20,4 @@ class ReviewTest < ActiveSupport::TestCase
     review = Review.new(rating: 5, comment: "Great Film")
     assert true
   end
-
-  test "should delete a review" do
-    review = Review.delete(rating: 5, comment: "Great Film")
-    assert true
-  end
 end

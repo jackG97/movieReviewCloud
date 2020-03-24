@@ -25,4 +25,9 @@ class MovieTest < ActiveSupport::TestCase
     movie = Movie.new(title: "Worlds End ", description: "Blah Blah", director: "Man", rating: 15, movie_length: 2)
     assert true
   end
+
+  test "should delete a movie" do
+    movie = Movie.delete(title: "Worlds End ", description: "Blah Blah", director: "Man", rating: 15, movie_length: 2)
+    assert true
+  end
 end

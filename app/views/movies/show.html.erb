@@ -49,10 +49,13 @@
                 <td><strong>Rating out of 5:</strong></td>
                 <p><%= review.rating %></p>
               </div>
+
             <% end %>
           <% end %>
         </div>
       </div>
+
+
 
       <%= link_to 'Edit', edit_movie_path(@movie) %> |
       <%= link_to "Delete", movie_path, :confirm => "Are you sure?", :method => :delete %> |

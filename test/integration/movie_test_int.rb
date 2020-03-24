@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class MovieTest < ActionDispatch::IntegrationTest
+class MovieTestInt < ActionDispatch::IntegrationTest
   fixtures :all
 
   test 'try to add a new movie' do

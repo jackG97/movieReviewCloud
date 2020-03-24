@@ -21,6 +21,7 @@ end
   # GET /movies/1.json
   def show
     @reviews = Review.where(movie_id: @movie.id).order("created_at DESC")
+  
   end
 
   # GET /movies/new

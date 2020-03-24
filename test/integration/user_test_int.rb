@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class UserTest < ActionDispatch::IntegrationTest
+class UserTestInt < ActionDispatch::IntegrationTest
   fixtures :all
 
   test 'try to create a new user without a password' do
@@ -22,6 +22,6 @@ class UserTest < ActionDispatch::IntegrationTest
 
   post users_url, params:{user: {email: @user.email}}
   assert_equal '/users', path
-  
+
 end
 end
